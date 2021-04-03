@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>assignment three </title>
+    <script>
+        function showunicode(){
+            var unicode=document.getElementById("VALUE").value;
+            
+            document.write(unicode.charCodeAt(0));
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Unicode value of Given Char.</h1>
+
+    <div>
+        <label for="VALUE">Enter Text</label>
+        <input type="text" placeholder="Enter text " id="VALUE">
+        <br>
+         
+        <label for="checkbutton">Show Unicode</label>
+        <input type="button" id="checkbutton" onclick="showunicode()">
+    </div>
+    
+</body>
+</html>

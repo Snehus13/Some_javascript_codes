@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>change in color</title>
+    <style>
+        #ptag{
+            border: black;
+            width: 10%;
+        }
+    </style>
+    <script>
+        function changecolor(){
+            var divRef=document.getElementById("container"); 
+
+
+            var color=document.getElementById("colorinput").value;
+            
+            var pTag = document.createElement("p");
+            pTag.style = "margin:10px;padding:10px;background-color:"+color;
+
+            divRef.append(pTag);
+        }
+    </script>
+</head>
+<body>
+    <h1>show color using text</h1>
+    <input type="text" id="colorinput" placeholder="input color">
+    <br>
+    <input type="button" id="colorbtn" value="Click to change color" onclick="changecolor()">
+
+    <div id="container">
+       
+    </div>
+
+    
+</body>
+</html>

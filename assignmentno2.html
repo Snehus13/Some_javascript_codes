@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>JavaScriptAssignment no2 Color selction</title>
+        <style>
+            .Style-example{
+                border: 1px solid;
+                width: 230px;
+                display: inline-block;
+                
+            }
+            #checkbox-items{
+                margin: 10px;
+                margin-left: 8px;
+            }     
+             </style>
+             <script>
+                function selectionofcolor(){
+                    var divRef=document.getElementById("container"); 
+                    var c1=document.getElementsById("redcolor").value;
+                    var c2=document.getElementsById("pinkcolor").value;
+                    var c3=document.getElementsById("orangecolor").value;
+                    var c4=document.getElementsById("yellowcolor").value;
+                    var c5=document.getElementsById("purplecolor").value;
+                    var c6=document.getElementsById("cyancolor").value;
+                    var c7=document.getElementsById("blackcolor").value;
+                    var c8=document.getElementsById("bluecolor").value;
+                   
+                    
+                        if(c1.checked==true){
+                      var pTag = document.createElement("p");
+                       pTag.style = "margin:10px;padding:10px;background-color:"+c1;
+                       divRef.append(pTag);
+                    }
+                    else if(c2.checked==true){
+                        var pTag = document.createElement("p");
+                       pTag.style = "margin:10px;padding:10px;background-color:"+c2;
+                       divRef.append(pTag);
+                    }
+                    else{
+                        alert("choose the color");
+                    }
+                 
+
+                 }
+
+             </script>
+    </head>
+
+    <body>
+        <h1>JavaScript to print Selcted items container</h1>
+        <hr>
+
+        <div id="checkbox-items" class="Style-example">
+
+        <p id="title-ptag" class="ptag-style">Select Your Favourite Color</p>
+    
+      
+    
+    <div>
+    <input type="checkbox" id="redcolor" value="Red" onchange="selectionofcolor()">
+    <label for="redcolor">RED</label>
+</div>
+    <div>
+    <input type="checkbox" id="pinkcolor" value="Pink" onchange="selectionofcolor()">
+    <label for="pinkcolor">PINK</label>
+</div>
+    <div>
+    <input type="checkbox" id="orangecolor" value="Orange" onchange="selectionofcolor()">
+    <label for="orangecolor">ORANGE</label>
+</div>
+    <div>
+    <input type="checkbox" id="yellowcolor" value="Yellow" onchange="selectionofcolor()">
+    <label for="yellowcolor">YELLOW</label>
+</div>
+    <div>
+    <input type="checkbox" id="purplecolor" value="Purple" onchange="selectionofcolor()">
+    <label for="purplecolor">PURPLE</label>
+</div>
+    <div>
+    <input type="checkbox" id="cyancolor" value="Cyan" onchange="selectionofcolor()">
+    <label for="cyancolor">CYAN</label>
+</div>
+    <div>
+    <input type="checkbox" id="blackcolor" value="Black" onchange="selectionofcolor()">
+    <label for="blackcolor">BALCK</label>
+</div>
+    <div>
+    <input type="checkbox" id="bluecolor" value="Black" onchange="selectionofcolor()">
+    <label for="bluecolor">BLUE</label>
+</div>
+</div>
+<br>
+
+<div id="container">
+
+</div>
+    </body>
+</html>
